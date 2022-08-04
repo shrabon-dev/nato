@@ -1,342 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nato</title>
-        <!-- ******************************************* 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nato</title>
+  <!-- ******************************************* 
                     GOOGLE FONT FAMILY START   
         **********************************************-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        <!-- ******************************************* 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- ******************************************* 
                     GOOGLE FONT FAMILY  END   
         **********************************************-->
-      <link rel="stylesheet" href="dist/all.min.css">
-      <link rel="stylesheet" href="dist/parallax.css">
-      <link rel="stylesheet" href="dist/slick.css">
-      <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="dist/all.min.css">
+  <link rel="stylesheet" href="dist/slick.css">
+  <link rel="stylesheet" href="dist/output.css">
 
 </head>
-<body class="slider">
-        <!-- ******************************************* 
+
+<body class="overflow-x-hidden">
+  <!-- ******************************************* 
                        NAV BAR START 
         **********************************************-->
 
-        <nav class="flex justify-between bg-nav_bg py-3 px-5 fixed top-0 left-0 right-0 w-full z-50">
-          <div class="logo md:w-1/12 sm:w-2/3 self-center">
-            <a href="index.html">
-              <img width="80" src="images/logo/logo.png" alt="nato">
-            </a>
-          </div>
+  <nav class="flex justify-between bg-nav_bg py-3 px-5 fixed top-0 left-0 right-0 w-full z_9999">
+    <div class="logo md:w-1/12 sm:w-2/3 self-center">
+      <a href="index.html">
+        <img width="80" src="images/logo/logo.png" alt="nato">
+      </a>
+    </div>
 
-          <div class="menu_bar  md:block sm:hidden">
-            <ul class="flex justify-between">
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Home</a></li>
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">About</a></li>
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Services</a></li>
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Gallary</a></li>
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Pricing</a></li>
-                  <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Contact us</a></li>
-            </ul>
-          </div>
+    <div class="menu_bar  md:block sm:hidden">
+      <ul class="flex justify-between">
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#">Home</a></li>
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#about">About</a></li>
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#service">Services</a></li>
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#Featured">Gallary</a></li>
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#">Pricing</a></li>
+        <li class=""><a class="menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2"
+            href="#contact">Contact us</a></li>
+      </ul>
+    </div>
 
-          <div class="store flex justify-end items-center md:w-[80px] sm:w-[150px] ">
-            <a href="#">
-            <img width="18" src="images/victore/store.png" alt="store nato">
-            </a>
-  
-            <img class="inline-block h-[15px] md:ml-6 sm:ml-10" width="14" height="10" src="images/victore/search.png" alt="search nato">
-          </div>
+    <div class="store flex justify-end items-center md:w-[80px] sm:w-[150px] ">
+      <a href="#">
+        <img width="18" src="images/victore/store.png" alt="store nato">
+      </a>
 
-      
-                  <!-- ******************************************* 
+      <img class="inline-block h-[15px] md:ml-6 sm:ml-10" width="14" height="10" src="images/victore/search.png"
+        alt="search nato">
+    </div>
+
+
+    <!-- ******************************************* 
                       MOBILE NAV BAR START   
         **********************************************-->
-          <ul class="w-[80px] md:hidden sm:block">
-            <li class="menu_icon relative ">
-               <img class="block ml-auto mt-1"  width="20" src="images/menu/menu.png" alt="menu">
-           
-                <ul class="menu_bar duration-300 absolute top-8  -right-52 rounded-bl border-t-[1px] border-[#3e3e3e] bg-nav_bg w-[150px]">
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Home</a></li>
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">About</a></li>
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Services</a></li>
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Gallary</a></li>
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Pricing</a></li>
-                  <li class="border-b-[1px] border-[#3e3e3e]  "><a class="menu_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2" href="#">Contact us</a></li>
+    <ul class="w-[80px] md:hidden sm:block">
+      <li class="menu_icon relative ">
+        <img class="block ml-auto mt-1" width="20" src="images/menu/menu.png" alt="menu">
 
-                </ul>
-            </li>
-          </ul>
-                  <!-- ******************************************* 
+        <ul
+          class="menu_bar duration-300 absolute top-8  -right-52 rounded-bl border-t-[1px] border-[#3e3e3e] bg-nav_bg w-[150px]">
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a"  href="#">Home</a></li>
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a"  href="#about">About</a></li>
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a"  href="#service">Services</a></li>
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a" href="#Featured">Gallary</a></li>
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a" href="#">Pricing</a></li>
+          <li class="border-b-[1px] border-[#3e3e3e]  "><a class="mobile_menu_a" href="#contact">Contact us</a></li>
+
+        </ul>
+      </li>
+    </ul>
+    <!-- ******************************************* 
                       MOBILE  NAV BAR END   
         **********************************************-->
-         </nav>
+  </nav>
 
-        <!-- ******************************************* 
+  <!-- ******************************************* 
                        NAV BAR END   
         **********************************************-->
-        <!-- ******************************************* 
+  <!-- ******************************************* 
                        BANNER SECTION START 
         **********************************************-->
-  <section class="slide active banner_section w-screen banner-img">
+  <section id="home" class=" banner_section w-screen banner-img">
 
 
 
-        <div class="banner_text p-5">
-            <div class="2xl:w-2/5 xl:w-2/6 lg:w-2/5 md:w-2/5 sm:w-6/7 md:m-0 md:ml-auto sm:m-auto md:bg-nav_bg sm:bg-bg_op_5 lg:p-8 md:p-8 sm:p-4 rounded-md xl:mt-[15%] lg:mt-[15%] md:mt-[20%] sm:mt-[40%]">
+    <div class="banner_text p-5">
+      <div
+        class="2xl:w-2/5 xl:w-2/6 lg:w-2/5 md:w-2/5 sm:w-6/7 md:m-0 md:ml-auto sm:m-auto md:bg-nav_bg sm:bg-bg_op_5 lg:p-8 md:p-8 sm:p-4 rounded-md xl:mt-[15%] lg:mt-[15%] md:mt-[20%] sm:mt-[30%]">
 
-                <h1 class="font-work-sans sm:text-3xl text-center text-white sm:font-bold">Design Your Space <span class="xl:block">For Living</span></h1>
-                <p class="font-work-sans text-sm text-white font-normal text-center mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+        <h1 class="font-work-sans sm:text-3xl text-center text-white sm:font-bold">Design Your Space <span
+            class="xl:block">For Living</span></h1>
+        <p class="font-work-sans text-sm text-white font-normal text-center mt-4">Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
 
-                  <div class="text-center">
-                    <a class="button" href="#">Know More</a>
-                  </div>
-
-            </div>
+        <div class="text-center">
+          <a class="button" href="#">Know More</a>
         </div>
 
+      </div>
+    </div>
 
-          
-    </section>
-        <!-- ******************************************* 
+
+
+  </section>
+  <!-- ******************************************* 
                        BANNER SECTION END 
         **********************************************-->
-         <!-- ******************************************* 
+  <!-- ******************************************* 
                         SECTION TWO START 
         **********************************************-->
-    <section class="slide queue  w-screen bg-white h-screen sm:container_padding md:flex justify-between items-center md:py-10 sm:py-14">
+  <section id="about" class=" bg-white  sm:container_padding md:flex justify-between items-center md:py-10 sm:py-14">
 
 
-      <div class="text_part md:pr-4 md:w-[55%]">
-        <h3 class="font-work-sans xl:text-5xl md:text-3xl sm:text-2xl font-semibold md:text-left sm:text-center sm:pt-5">Creative Solutions <span class="2xl:block xl:block lg:block">by Professional</span></h3>
-        <p class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal md:text-left text-secound_clr sm:text-center sm:py-2 xl:w-[580px] md:w-[380px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-         <div class="counter_part flex justify-between items-center sm:py-4">
-             <div class="md:border-r border-secound_clr md:w-1/3">
-              <span class="font-work-sans xl:text-xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span>53</span>k</span>
-              <p class="font-work-sans xl:text-sm  md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">Happy Client</p>
-             </div>
-             <div class="md:border-r border-secound_clr  md:w-1/3 lg:pl-12 md:pl-4">
-              <span class="font-work-sans xl:text-xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span>10</span>k</span>
-              <p class="font-work-sans xl:text-sm  md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">Projects Done</p>
-             </div>
-             <div class="md:w-1/3 lg:pl-12 md:pl-4">
-              <span class="font-work-sans xl:text-xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span>120</span> </span>
-              <p class="font-work-sans xl:text-sm md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">Get Award</p>
-             </div>
-         </div>
+    <div class="text_part md:pr-4 md:w-[55%]">
+      <h3 class="font-work-sans xl:text-5xl md:text-3xl sm:text-2xl font-semibold md:text-left sm:text-center sm:pt-5">
+        Creative Solutions <span class="2xl:block xl:block lg:block">by Professional</span></h3>
+      <p
+        class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal md:text-left text-secound_clr sm:text-center sm:py-2 xl:w-[580px] md:w-[380px]">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s</p>
+      <div class="counter_part flex justify-between items-center sm:py-4">
+        <div class="md:border-r border-secound_clr md:w-1/3">
+          <span
+            class="font-work-sans xl:text-4xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span class="counter">53</span>k</span>
+          <p
+            class="font-work-sans xl:text-base  md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">
+            Happy Client</p>
+        </div>
+        <div class="md:border-r border-secound_clr  md:w-1/3 lg:pl-12 md:pl-4">
+          <span
+            class="font-work-sans xl:text-4xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span class="counter">10</span>k</span>
+          <p
+            class="font-work-sans xl:text-base  md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">
+            Projects Done</p>
+        </div>
+        <div class="md:w-1/3 lg:pl-12 md:pl-4">
+          <span
+            class="font-work-sans xl:text-4xl md:text-2xl sm:text-xl font-semibold md:text-left sm:text-center block text-bold_clr"><span class="counter">120</span>
+          </span>
+          <p
+            class="font-work-sans xl:text-base md:text-xs sm:text-sm font-normal md:text-left sm:text-center text-secound_clr">
+            Get Award</p>
+        </div>
       </div>
+    </div>
 
-      <div class="img_part flex justify-around md:w-[45%]">
-        <div class="img_one sm:self-end"><img src="images/about/Group 6.png" alt="about/Group 6.png"></div>
-        <div class="img_two "><img src="images/about/Group 7.png" alt="about/Group 7.png"></div>
-      </div>
-    </section>
-       <!-- ******************************************* 
+    <div class="img_part flex justify-around md:w-[45%]">
+      <div class="img_one sm:self-end"><img src="images/about/Group 6.png" alt="about/Group 6.png"></div>
+      <div class="img_two "><img src="images/about/Group 7.png" alt="about/Group 7.png"></div>
+    </div>
+  </section>
+  <!-- ******************************************* 
                         SECTION TWO END 
         **********************************************-->
-         <!-- ******************************************* 
+  <!-- ******************************************* 
                         SECTION THREE START 
         **********************************************-->
-    <section class="slide queue banner_section w-screen bg-white h-screen md:px-14 lg:py-32 md:py-24 sm:py-12">
-          <div class="flex sm:flex-col md:flex-row">
-              <div class="img_part md:order-1 sm:order-2 md:w-1/2">
-                <img src="images/about/Group 10.png" alt="Group 10.png">
-              </div>
-              <div class="text_part md:order-2 sm:order-1  md:w-1/2 relative">
-                <div class="md:absolute bottom-0 xl:top-1/4 lg:top-1/4 md:top-2/3  -left-40 z-50 bg-white md:p-8 rounded-lg">
-                    <h3 class="font-work-sans xl:text-5xl md:text-3xl sm:text-2xl font-semibold md:text-left sm:text-center sm:pt-5 ">Our interiors designed
-                        <span class="2xl:block xl:block lg:block sm:block">to last a lifetime</span></h3>
-                    <p class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal md:text-left text-secound_clr sm:text-center sm:py-4 xl:w-[580px] md:w-[380px] md:px-0 sm:px-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>        
-                </div>
-              </div>
-          </div>
-    </section>
-         <!-- ******************************************* 
+  <section id="" class=" bg-white  md:px-14 lg:py-32 md:py-24 sm:py-12">
+    <div class="flex sm:flex-col md:flex-row">
+      <div class="img_part md:order-1 sm:order-2 md:w-1/2">
+        <img src="images/about/Group 10.png" alt="Group 10.png">
+      </div>
+      <div class="text_part md:order-2 sm:order-1  md:w-1/2 relative">
+        <div class="md:absolute bottom-0 xl:top-1/4 lg:top-1/4 md:top-2/3  -left-40 z-50 bg-white md:p-8 rounded-lg">
+          <h3
+            class="font-work-sans xl:text-5xl md:text-3xl sm:text-2xl font-semibold md:text-left sm:text-center sm:pt-5 ">
+            Our interiors designed
+            <span class="2xl:block xl:block lg:block sm:block">to last a lifetime</span>
+          </h3>
+          <p
+            class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal md:text-left text-secound_clr sm:text-center sm:py-4 xl:w-[580px] md:w-[380px] md:px-0 sm:px-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ******************************************* 
                         SECTION THREE END 
         **********************************************-->
-        <!-- ******************************************* 
+  <!-- ******************************************* 
                         SECTION FOUR START 
         **********************************************-->
-    <section class="slide queue banner_section w-screen bg-white  h-screen md:px-14 xl:py-20 lg:py-32 md:py-24 sm:pt-[20%]">
-           <div class="md:flex justify-between ">
-                <div class="left_part flex justify-between flex-wrap md:w-2/3">
-                   <div class="w-[46%] pt-0 lg:p-8 p-2 md:mt-0 sm:mt-2 ">
-                        <div class="card text-center">
-                            <img class="block m-auto md:w-9 sm:w-5"  src="images/victore/victore/Group (1).png" alt="victore">
-                            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Restaurant Interior</h4>
-                            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                   </div>
-                   <div class="w-[46%] pt-0 lg:p-8  p-2 md:mt-0 sm:mt-2 ">
-                        <div class="card text-center">
-                            <img class="block m-auto md:w-9 sm:w-5"  src="images/victore/victore/Group 12.png" alt="victore">
-                            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Office Interior</h4>
-                            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="w-[46%] pt-0 lg:p-8 p-2 md:mt-0 sm:mt-2 ">
-                        <div class="card text-center">
-                            <img class="block m-auto md:w-9 sm:w-5"  src="images/victore/victore/Group.png" alt="victore">
-                            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Home Interior</h4>
-                            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="w-[46%] pt-0  lg:p-8 p-2 md:mt-0 sm:mt-2 ">
-                        <div class="card text-center">
-                            <img class="block m-auto md:w-9 sm:w-5" src="images/victore/victore/kitchen 1.png" alt="victore">
-                            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Architecture</h4>
-                            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                   
-               </div>
+  <section id="service" class=" bg-white md:px-14 xl:py-20 lg:py-32 md:py-24 sm:pt-[20%]">
+    <div class="md:flex justify-between ">
+      <div class="left_part flex justify-between flex-wrap md:w-2/3">
+        <div class="w-[46%] pt-0 lg:p-8 p-2 md:mt-0 sm:mt-2 ">
+          <div class="card text-center">
+            <img class="block m-auto md:w-9 sm:w-5" src="images/victore/victore/Group (1).png" alt="victore">
+            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Restaurant Interior
+            </h4>
+            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="w-[46%] pt-0 lg:p-8  p-2 md:mt-0 sm:mt-2 ">
+          <div class="card text-center">
+            <img class="block m-auto md:w-9 sm:w-5" src="images/victore/victore/Group 12.png" alt="victore">
+            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Office Interior</h4>
+            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="w-[46%] pt-0 lg:p-8 p-2 md:mt-0 sm:mt-2 ">
+          <div class="card text-center">
+            <img class="block m-auto md:w-9 sm:w-5" src="images/victore/victore/Group.png" alt="victore">
+            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Home Interior</h4>
+            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="w-[46%] pt-0  lg:p-8 p-2 md:mt-0 sm:mt-2 ">
+          <div class="card text-center">
+            <img class="block m-auto md:w-9 sm:w-5" src="images/victore/victore/kitchen 1.png" alt="victore">
+            <h4 class="font-work-sans xl:text-xl md:text-base sm:text-base font-semibold sm:py-3">Architecture</h4>
+            <p class="font-work-sans xl:text-base md:text-sm sm:text-xs font-normal  text-secound_clr text-center ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
 
-                <div class="right_part md:w-1/3 lg:pt-4 md:pt-2">
-                  <h4 class="font-work-sans xl:text-4xl md:text-2xl sm:text-base md:font-bold font-semibold sm:py-2 md:text-left sm:text-center">Services provided <span class="xl:block">by us</span></h4>
-                  <p class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal  text-secound_clr md:text-left sm:text-center">
-                    We have been providing great
-                    floring solutions service.</p>
-                  <div class="md:text-left sm:text-center">
-                    <a class="button sm:text-xs" href="#">Know More</a>
-                  </div>
+      </div>
 
-                  <div class="img sm:hidden md:block mt-3">
-                    <img src="images/about/Group 10.png" alt="about/Group 10.png">
-                  </div>
+      <div class="right_part md:w-1/3 lg:pt-4 md:pt-2">
+        <h4
+          class="font-work-sans xl:text-4xl md:text-2xl sm:text-base md:font-bold font-semibold sm:py-2 md:text-left sm:text-center">
+          Services provided <span class="xl:block">by us</span></h4>
+        <p
+          class="font-work-sans xl:text-xl md:text-base sm:text-xs font-normal  text-secound_clr md:text-left sm:text-center">
+          We have been providing great
+          floring solutions service.</p>
+        <div class="md:text-left sm:text-center">
+          <a class="button sm:text-xs" href="#">Know More</a>
+        </div>
 
-                </div>
-           </div> 
-    </section>
-        <!-- ******************************************* 
+        <div class="img sm:hidden md:block mt-3">
+          <img src="images/about/Group 10.png" alt="about/Group 10.png">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ******************************************* 
                         SECTION FOUR START 
         **********************************************-->
-        <!-- ******************************************* 
+  <!-- ******************************************* 
                         SECTION FIVE START 
         **********************************************-->
-    <div class="slide queue  w-screen bg-white  h-screen md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%]">
-           <div class="flex justify-between w-full items-center sm:mt-0 lg:my-10 md:my-5">
-                  <h3 class="font-work-sans xl:text-4xl md:text-2xl sm:text-base md:font-bold font-semibold sm:py-2 md:text-left sm:text-center">Our  Featured Projects </h3>
-                  <div class="md:text-left sm:text-center inline-block self-center">
-                      <a class="button mt-0 sm:text-xs" href="#">View More</a>
-                  </div>
-            </div>
+  <div id="Featured" class="bg-white md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%]">
+    <div class="flex justify-between w-full items-center sm:mt-0 lg:my-10 md:my-5">
+      <h3
+        class="font-work-sans xl:text-4xl md:text-2xl sm:text-base md:font-bold font-semibold sm:py-2 md:text-left sm:text-center">
+        Our Featured Projects </h3>
+      <div class="md:text-left sm:text-center inline-block self-center">
+        <a class="button mt-0 sm:text-xs" href="#">View More</a>
+      </div>
+    </div>
 
 
-              <div class="gallary flex justify-between flex-wrap md:p-4">
-                <div class="img md:w-[48%] sm:w-full sm:m-1"><img class="w-full block " src="images/gallary/Mask group.png" alt="gallary/Mask group (1).png"></div>
-                <div class=" md:w-[24%]  sm:w-full sm:flex sm:m-1 flex-wrap">
-                <div class="img md:w-full sm:w-[47%] sm:m-1"><img src="images/gallary/Mask group (1).png" alt="gallary/Mask group (1).png"></div>
-                <div class="img md:w-full  sm:w-[47%] sm:m-1"><img src="images/gallary/Mask group (2).png" alt="gallary/Mask group (1).png"></div>
-                </div>
-                <div class=" md:w-[24%] sm:w-full sm:flex sm:m-1 flex-wrap md:flex-row sm:flex-row-reverse">
-                  <div class="img md:w-full sm:w-[47%] sm:m-1"><img class="w-full block "  src="images/gallary/Mask group (3).png" alt="gallary/Mask group (1).png"></div>
-                  <div class="img md:w-full sm:w-[47%] sm:m-1"><img class="w-full block " src="images/gallary/Mask group (4).png" alt="gallary/Mask group (1).png"></div>
-                 </div>
-                 </div>
-    
-            </div>
-         <!-- ******************************************* 
+    <div class="gallary flex justify-between flex-wrap md:p-4">
+      <div class="img md:w-[65%] sm:w-full sm:m-1 overflow-hidden"><img class="w-full block scale-100 duration-500 hover:scale-150 cursor-pointer" src="images/gallary/Mask group.png"
+          alt="gallary/Mask group (1).png"></div>
+      <div class=" md:w-[32%]  sm:w-full sm:flex sm:m-1 flex-wrap">
+        <div class="img md:w-full sm:w-[47%] sm:m-1 overflow-hidden"><img class="scale-100 duration-500 hover:scale-150 cursor-pointer"  src="images/gallary/Mask group (1).png"
+            alt="gallary/Mask group (1).png"></div>
+        <div class="img md:w-full  sm:w-[47%] sm:m-1 overflow-hidden"><img  class="scale-100 duration-500 hover:scale-150 cursor-pointer" src="images/gallary/Mask group (2).png"
+            alt="gallary/Mask group (1).png"></div>
+      </div>
+      <!-- <div class=" md:w-[24%] sm:w-full sm:flex sm:m-1 flex-wrap md:flex-row sm:flex-row-reverse"> -->
+        <div class="img md:w-[47%]  sm:w-[47%] sm:m-1 overflow-hidden"><img class="w-full h-full block scale-100 duration-500 hover:scale-150 cursor-pointer" src="images/gallary/Mask group (3).png"
+            alt="gallary/Mask group (1).png"></div>
+        <div class="img md:w-[47%] sm:w-[47%] sm:m-1 overflow-hidden"><img class="w-full block scale-100 duration-500 hover:scale-150 cursor-pointer" src="images/gallary/Mask group (4).png"
+            alt="gallary/Mask group (1).png"></div>
+      <!-- </div> -->
+    </div>
+
+  </div>
+  <!-- ******************************************* 
                         SECTION FIVE END  
         **********************************************-->
-                <!-- ******************************************* 
+  <!-- ******************************************* 
                         SECTION SIX START 
         **********************************************-->
-    <div class="slide queue  w-screen bg-white  h-screen md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-14">
-      <h3 class="font-work-sans xl:text-4xl md:text-2xl sm:text-base  md:font-bold font-bold sm:py-2 text-center md:pb-20">Our  Featured Projects </h3>
-          
+  <section class=" bg-white  md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-14">
+    <h3
+      class="font-work-sans xl:text-4xl md:text-2xl sm:text-base  md:font-bold font-bold sm:py-2 text-center md:pb-20">How we Work</h3>
 
-         <div class="flex justify-around items-center flex-wrap">
-          <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2 group hover:bg-main_clr">
-            <span class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold  duration-300 group-hover:text-white ">*01</span>
-            <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black md:py-0 sm:py-2 duration-300 group-hover:text-white leading-tight"> <span class="md:block">Ststement of</span>
-              the problem</h4>
-              <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white md:pt-2">Lorem Ipsum is simply dummy
-              text of the printing and
-              typesetting industry. Lorem
-              Ipsum has been the.</p>
-          </div>
-          <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2 group hover:bg-main_clr">
-            <span class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*02</span>
-            <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white leading-tight"> Project <span class="md:block">presentation</span></h4>
-              <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is simply dummy
-                text of the printing and
-                typesetting industry. Lorem
-                Ipsum has been the.</p>
-          </div>
-          <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2 group hover:bg-main_clr">
-            <span class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*03</span>
-            <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white"> Project 
-              <span class="md:block">presentation</span></h4>
-              <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is simply dummy
-                text of the printing and
-                typesetting industry. Lorem
-                Ipsum has been the.</p>
-          </div>
 
-         </div>
+    <div class="flex justify-around items-center flex-wrap">
+      <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+        <span
+          class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold  duration-300 group-hover:text-white ">*01</span>
+        <h4
+          class="font-work-sans lg:text-2xl text-lg font-bold text-black md:py-0 sm:py-2 duration-300 group-hover:text-white leading-tight">
+          <span class="md:block">Ststement of</span>
+          the problem
+        </h4>
+        <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white md:pt-2">Lorem
+          Ipsum is simply dummy
+          text of the printing and
+          typesetting industry. Lorem
+          Ipsum has been the.</p>
+      </div>
+      <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+        <span
+          class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*02</span>
+        <h4
+          class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white leading-tight">
+          Project <span class="md:block">presentation</span></h4>
+        <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is
+          simply dummy
+          text of the printing and
+          typesetting industry. Lorem
+          Ipsum has been the.</p>
+      </div>
+      <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+        <span
+          class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*03</span>
+        <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white">
+          Project
+          <span class="md:block">presentation</span>
+        </h4>
+        <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is
+          simply dummy
+          text of the printing and
+          typesetting industry. Lorem
+          Ipsum has been the.</p>
+      </div>
+      <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+        <span
+          class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*04</span>
+        <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white">
+          Project
+          <span class="md:block">presentation</span>
+        </h4>
+        <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is
+          simply dummy
+          text of the printing and
+          typesetting industry. Lorem
+          Ipsum has been the.</p>
+      </div>
+      <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+        <span
+          class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*05</span>
+        <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white">
+          Project
+          <span class="md:block">presentation</span>
+        </h4>
+        <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is
+          simply dummy
+          text of the printing and
+          typesetting industry. Lorem
+          Ipsum has been the.</p>
+        </div>
+        <div class="card md:w-1/3 sm:w-full bg-transparent rounded-md lg:p-5 md:p-4 sm:p-2  md:mb-6 sm:mb-2 group duration-500 hover:bg-main_clr">
+          <span
+            class="font-work-sans lg:text-2xl text-lg   text-black inline-block font-bold   duration-300 group-hover:text-white ">*06</span>
+          <h4 class="font-work-sans lg:text-2xl text-lg font-bold text-black py-2 duration-300 group-hover:text-white">
+            Project
+            <span class="md:block">presentation</span>
+          </h4>
+          <p class="font-work-sans text-xs font-normal text-nav_bg duration-300 group-hover:text-white">Lorem Ipsum is
+            simply dummy
+            text of the printing and
+            typesetting industry. Lorem
+            Ipsum has been the.</p>
+        </div>
 
     </div>
-    <!-- ******************************************* 
+
+  </section>
+  <!-- ******************************************* 
                    SECTION SIX END  
    **********************************************-->
-        <!-- ******************************************* 
-                        SECTION SEVEN START 
+  <!-- ******************************************* 
+                    TEATIMONIAL    SECTION  START 
         **********************************************-->
-        <div class="slide queue  w-screen bg-red-400  h-screen md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%]">
-          <h3 class="font-work-sans xl:text-4xl md:text-2xl sm:text-base  md:font-bold font-bold sm:py-2 text-center md:pb-20">Our  Featured Projects </h3>
+  <section id="testimonial" class=" bg-white  md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%]">
+    <h3
+      class="font-work-sans xl:text-4xl md:text-2xl sm:text-base  md:font-bold font-bold sm:py-2 text-center lg:pb-28 md:pb-20">
+      What The People Thinks About Us</h3>
 
+    <div class="main_slider md:py-2 sm:py-10  relative">
 
-          <div  class="">
-
-            <div class="testi_img">
-              <img src="images/testimonial/Mask group.png" alt="testimonial">
-            </div>
-            <div class=" ">
-                    
-                  <p class="font-work-sans text-sm text-section font-medium mt-2"><span class="text-2xl opacity-60 ">"</span> This proved to be impossible using the traditional 
-                  concepts of space and time. Einstein developed a 
-                  new view of time first and then space. This proved 
-                  
-                  space and time. Einstein developed a new view 
-                  of time first and then space. <span class="text-2xl opacity-60 "></span> </p>
-                  <h5 class="font-work-sans text-2xl text-section font-bold">Regina Miles</h5>
-                  <h6 class="font-work-sans text-sm text-section font-semibold">Designer</h6>
-                  <span class="text-xs text-w text-main_clr tracking-wide"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-               
-                  
-            </div>
-         
-          </div>
-
-
+      <div class="md:w-2/4 sm:w-80 justify-center m-auto ">
+        <div class="testi_img md:w-64 sm:w-1/2 md:m-0 sm:m-auto">
+          <img src="images/testimonial/Mask group.png" alt="testimonial">
         </div>
-     <!-- ******************************************* 
-                    SECTION SEVEN END  
+        <div class="md:w-96 lg:h-52 md:h-48 sm:w-72  sm:relative lg:-bottom-14 md:-bottom-8 rounded-md md:-left-12 bg-white p-4 md:text-left sm:text-center sm:m-auto md:m-0">
+          <p class="font-work-sans text-sm text-section font-medium mt-2">
+            This proved to be impossible using the traditional
+            space and time. Einstein developed a new view
+            of time first and then space.
+          </p>
+          <h5 class="font-work-sans text-2xl sm:text-lg text-section font-bold">Regina Miles</h5>
+          <h6 class="font-work-sans text-sm text-section font-semibold">Designer</h6>
+          <span class="text-xs text-w text-main_clr tracking-wide"><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i></span>
+
+          <span
+            class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block absolute bottom-10 right-8"><i
+              class="fa-solid fa-quote-right"></i></span>
+        </div>
+
+      </div>
+      <div class="md:w-4/5 sm:w-80 justify-center m-auto ">
+        <div class="testi_img md:w-64 sm:w-1/2 md:m-0 sm:m-auto">
+          <img src="images/testimonial/Mask group.png" alt="testimonial">
+        </div>
+        <div class="md:w-96 lg:h-52 md:h-48 sm:w-72  sm:relative lg:-bottom-14 md:-bottom-8 rounded-md md:-left-12 bg-white p-4 md:text-left sm:text-center sm:m-auto md:m-0">
+          <p class="font-work-sans text-sm text-section font-medium mt-2">
+            This proved to be impossible using the traditional
+            space and time. Einstein developed a new view
+            of time first and then space.
+          </p>
+          <h5 class="font-work-sans text-2xl sm:text-lg text-section font-bold">Regina Miles</h5>
+          <h6 class="font-work-sans text-sm text-section font-semibold">Designer</h6>
+          <span class="text-xs text-w text-main_clr tracking-wide"><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i></span>
+
+          <span
+            class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block absolute bottom-10 right-8"><i
+              class="fa-solid fa-quote-right"></i></span>
+        </div>
+
+      </div>
+      <div class="md:w-4/5 sm:w-80 justify-center m-auto ">
+        <div class="testi_img md:w-64 sm:w-1/2 md:m-0 sm:m-auto">
+          <img src="images/testimonial/Mask group.png" alt="testimonial">
+        </div>
+        <div class="md:w-96 lg:h-52 md:h-48 sm:w-72  sm:relative lg:-bottom-14 md:-bottom-8 rounded-md md:-left-12 bg-white p-4 md:text-left sm:text-center sm:m-auto md:m-0">
+          <p class="font-work-sans text-sm text-section font-medium mt-2">
+            This proved to be impossible using the traditional
+            space and time. Einstein developed a new view
+            of time first and then space.
+          </p>
+          <h5 class="font-work-sans text-2xl sm:text-lg text-section font-bold">Regina Miles</h5>
+          <h6 class="font-work-sans text-sm text-section font-semibold">Designer</h6>
+          <span class="text-xs text-w text-main_clr tracking-wide"><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i></span>
+
+          <span
+            class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block absolute bottom-10 right-8"><i
+              class="fa-solid fa-quote-right"></i></span>
+        </div>
+
+      </div>
+    
+
+    </div>
+
+  </section>
+  <!-- ******************************************* 
+                 TEATIMONIAL   SECTION  END  
+    **********************************************-->
+      <!-- ******************************************* 
+                 CONTACT  SECTION  START  
+    **********************************************-->
+    <section id="contact" class=" bg-white  md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%] md:flex md:justify-around ">
+        <div class="text md:w-1/3  md:mt-10">
+         <h4 class="md:text-4xl sm:text-2xl font-work-sans font-bold md:text-section sm:text-btn_clr md:mb-6 sm:mb-4">Contact Us</h4>
+          <p class="font-work-sans text-xs font-normal text-nav_bg ">Voluptates debitis cupiditate quo neque inventore? sit amet consectetur adipisicing elit. Rem tempora iure voluptate voluptates nostrum mollitia modi, obcaecati
+             earum! Mollitia totam ut amet officiis voluptates debitis cupiditate quo neque inventore? Quae!</p>
+            <div class="md:mt-5 space-x-3">
+              <span  class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+              <span  class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+              <span  class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+              <span  class="w-10 h-10 bg-main_clr text-center leading-10 rounded-full text-white text-xl inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></span>
+            </div>   
+          <div class="md:w-full md:mt-10 sm:mt-4 border border-main_clr"><iframe class="w-full block h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.036944847037!2d90.3671072219528!3d23.747050044460174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2z4Kan4Ka-4Kao4Kau4Kao4KeN4Kah4Ka_LCDgpqLgpr7gppXgpr4gMTIwNQ!5e0!3m2!1sbn!2sbd!4v1659590063658!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+         <div class=" md:w-2/3  md:p-8 md:pl-60 sm:p-4 sm:w-full ">
+          <form action="#" method="post" class="z-40">
+            <div>
+              <label for="" class="lavel ">Name*</label>
+              <input class="input" type="text" placeholder="Your name......">
+            </div>
+            <div>
+              <label for="" class="lavel">Email*</label>
+              <input class="input " type="text" placeholder="Your name......">
+            </div>
+            <div>
+              <label for="" class="lavel">Message*</label>
+              <textarea name="" id="" class="text_input" cols="30" rows="10"></textarea>
+            </div>
+        
+  
+      
+  
+            <button type="submit" class="w-full bg-yello_primary py-2 mt-8 rounded-sm text-white text-base font-work-sans font-normal"> Book Appointment </button>
+              
+          </form>
+        </div>  
+  </section>
+          <!-- ******************************************* 
+                 CONTACT  SECTION  END  
+    **********************************************-->
+    <!-- ******************************************* 
+               FOOTER  SECTION  START  
+  **********************************************-->
+  <footer  class=" bg-nav_bg  md:px-14 xl:py-20 lg:py-32 md:py-24 sm:px-4 sm:pt-[20%] flex flex-wrap md:justify-around">
+        <div class="ftr_logo md:w-1/4 sm:w-full">
+          <div class="logo"><img src="images/logo/logo.png" alt="logo/logo.png"></div>
+          <p class="font-work-sans text-xs font-normal text-white md:mt-10 sm:mt-5">
+            Lorem Ipsum is simply
+            dummy text of the printing
+            and typesetting.
+            Lorem Ipsum is simply
+            dummy text of the printing
+            and typesetting.</p>
+            <p class="font-work-sans text-base font-light text-white md:mt-5 sm:mt-5">
+             Bawani 7 road, 4th Floor GYR Tower, Kusia-1205 </p>
+        </div>
+        <div class="ftr_quick_link md:w-1/5 md:ml-5 sm:w-1/2">
+          <ul class="">
+            <li class=""><a class="mobile_menu_a"
+                href="#">Seevice</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Architecture</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Iriterior design</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Lighting installation</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Floor Planning</a></li>
+        
+          </ul>
+        </div>
+        <div class="ftr_quick_link md:w-1/4 sm:w-1/2">
+          <ul class="">
+            <li class=""><a class="mobile_menu_a"
+                href="#">Our team</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Testimonials</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Services</a></li>
+        
+            <li class=""><a class="mobile_menu_a"
+                href="#">Pricing</a></li>
+            <li class=""><a class="mobile_menu_a"
+                href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="ftr_img md:w-1/4 sm:w-full">
+          <h3 class="font-work-sans text-lg font-bold text-white">Recent Work </h3>
+          <div class="flex justify-around flex-wrap space-x-2 space-y-2">
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14 mt-2 overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 6.png" alt="about/Group 10.png"></div>
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14 overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 10.png" alt="about/Group 10.png"></div>
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14 overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 7.png" alt="about/Group 10.png"></div>
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14 overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 7.png" alt="about/Group 10.png"></div>
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14 overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 6.png" alt="about/Group 10.png"></div>
+            <div class="img md:w-[30%] md:h-20 sm:w-[30%] sm:h-14  overflow-hidden"><img class="w-full h-full block cursor-pointer duration-300 scale-100 hover:scale-125" src="images/about/Group 10.png" alt="about/Group 10.png"></div>
+          </div>
+        </div>
+        <div class="copyright border-t flex justify-between w-full mt-6">
+            <p class="font-work-sans md:text-lg sm:text-xs font-light text-white md:mt-5">Copyright &copy; 2021 UI8 LLC. All rights raserved</p>
+            <div class="icon md:w-1/2 text-right sm:w-full">
+              <div class="md:mt-5 md:space-x-3 sm:space-x-1">
+                <span  class="md:w-8 md:h-8 sm:w-6 sm:h-6 bg-main_clr text-center md:leading-8 sm:leading-6 rounded-full text-white sm:text-xs md:text-base inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                <span  class="md:w-8 md:h-8 sm:w-6 sm:h-6 bg-main_clr text-center md:leading-8 sm:leading-6 rounded-full text-white sm:text-xs md:text-base inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                <span  class="md:w-8 md:h-8 sm:w-6 sm:h-6 bg-main_clr text-center md:leading-8 sm:leading-6 rounded-full text-white sm:text-xs md:text-base inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span  class="md:w-8 md:h-8 sm:w-6 sm:h-6 bg-main_clr text-center md:leading-8 sm:leading-6 rounded-full text-white sm:text-xs md:text-base inline-block duration-300 hover:bg-emerald-900"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></span>
+              </div> 
+            </div>
+        </div>
+  </footer>
+  <!-- ******************************************* 
+                 FOOTER   SECTION  END  
     **********************************************-->
 
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-      
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      
-      </script>
 </body>
+
 </html>

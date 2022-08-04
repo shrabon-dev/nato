@@ -2,33 +2,180 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .button{
+@layer components {
+    .button {
         @apply font-work-sans text-base text-white font-medium py-2 px-4 bg-btn_clr mt-5 inline-block duration-300 hover:bg-main_clr rounded-sm
     }
+
+    .lavel {
+        @apply block text-sm font-work-sans font-semibold mt-1 mb-1 md:text-btn_clr sm:text-btn_clr
+    }
+
+    .input {
+        @apply border-2 text-sm text-btn_clr placeholder-white font-work-sans font-normal md:bg-transparent sm:bg-transparent border-btn_clr w-full block p-2 pl-3 mb-3 focus:outline-none sm:text-btn_clr
+    }
+
+    .text_input {
+        @apply border-2 text-sm text-btn_clr placeholder-white font-work-sans font-normal md:bg-transparent sm:bg-transparent border-btn_clr w-full block p-2 pl-3 mb-3 focus:outline-none sm:text-btn_clr
+    }
+    .mobile_menu_a{
+        @apply menu_md_a duration-300 font-pt-serif text-white font-normal text-sm  block  px-5 py-2
+    }
+    .heading_title{
+        
+    }
+ 
 }
 
-@layer utilities{
-    .menu_icon:hover .menu_bar{
-            right:-20px;
-            
+@layer utilities {
+    .menu_icon:hover .menu_bar {
+        right: -20px;
+
     }
-    .menu_a:hover{
-        background:#3e3e3e;
-        color:#00E2C8;
+
+    .menu_a:hover {
+        background: #3e3e3e;
+        color: #00E2C8;
     }
-    .menu_md_a:hover{
-        color:#00E2C8;
+
+    .menu_md_a:hover {
+        color: #00E2C8;
     }
-    .banner-img{
-        background:url(../images/banner/banner.png) no-repeat center;
-        background-size:cover;
+
+    .banner-img {
+        background: url(../images/banner/banner.png) no-repeat center;
+        background-size: cover;
         width: 100%;
-        height:100vh;
+        height: 100vh;
     }
-    .container_padding{
+
+    .container_padding {
         padding-left: 26px;
         padding-right: 26px;
     }
 
+}
+
+@screen md {
+    .slick-initialized .slick-slide {
+        display: flex !important;
+
+    }
+}
+
+.z_9999 {
+    z-index: 9999;
+}
+
+.next {
+    font-size: 24px;
+    color: #519D94;
+    position: absolute;
+    bottom: -60px;
+    right: 39%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid #519D94;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 99;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.prev {
+    font-size: 24px;
+    color: #519D94;
+    position: absolute;
+    bottom: -60px;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid #519D94;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 99;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+}
+@screen sm{
+    .menu_a::after{
+        display: none;
+    }
+    .menu_a_active{
+        color:#ffffff;
+    }
+    .hover_menu_a:hover{
+        color:#272727;
+        position: relative;
+
+    }
+    .add_btn_js{
+        display:block;
+        
+    }
+    .rmv_btn_js{
+        display:none;
+        
+    }
+    .overflow_hidden_x_important{
+        overflow-x: hidden !important;
+    }
+    .prev{
+        bottom: -30px;
+        left:35%;
+        transform: translate(-50%, -50%);
+        font-size:18px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+    }
+    .next{
+        bottom: -30px;
+        right:25%;
+        transform: translate(-50%, -50%);
+        font-size:18px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+    }
+  
+}
+@screen md{
+    .next {
+        left:4%;
+        bottom:50px;
+        width: 60px;
+        height: 60px;
+        line-height:60px;   
+    }
+    
+    .prev {
+        left:4%;
+        bottom:120px;
+        width: 60px;
+        height: 60px;
+        line-height:60px;
+    }
 }
