@@ -20,6 +20,7 @@
         **********************************************-->
   <link rel="stylesheet" href="dist/all.min.css">
   <link rel="stylesheet" href="dist/slick.css">
+  <link rel="stylesheet" href="dist/pointer.css">
   <link rel="stylesheet" href="dist/output.css">
 
 </head>
@@ -589,6 +590,7 @@
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/pointer.js"></script>
   <script src="js/script.js"></script>
   <script>
     jQuery(document).ready(function($) {
@@ -597,7 +599,15 @@
             time: 1000
         });
     });
+
+    init_pointer({
+		pointerColor: "purple", // Css color
+		ringSize: 15, // Pixels
+		ringClickSize: 10 // Pixels when clicking
+	})
 </script>
+
+
 
 </body>
 
